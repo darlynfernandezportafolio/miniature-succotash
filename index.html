@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portafolio de Darlyn Fernandez, diseñador 2D y 3D.">
+  <title>Portafolio - Darlyn Fernandez</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="encabezado">
+    <h1 class="encabezado__titulo">Darlyn Fernandez</h1>
+    <p class="encabezado__subtitulo">Diseños 2D y 3D</p>
+    <nav class="menu">
+      <ul class="menu__lista">
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#aprendiendo">Aprendiendo</a></li>
+        <li><a href="#portafolio">Portafolio</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="sobre-mi">
+      <h2>Sobre mí</h2>
+      <p>
+      Hola, soy Darlyn Fernandez. Me gusta el diseño y trabajo creando logotipos en 2D y proyectos musicales en 3D, pero lo que más me interesa es la tecnología.
+
+      Actualmente, estoy aprendiendo bases de datos y diseño web. En el futuro, me gustaría estudiar Ciberseguridad e Ingeniería en Sistemas, porque quiero aprender más sobre informática y dedicarme a algo relacionado con la tecnología..
+      </p>
+    </section>
+
+    <section id="habilidades">
+      <h2>Lo que hago</h2>
+      <div class="tarjetas">
+        <article class="tarjeta">
+          <h3>Diseño gráfico</h3>
+          <p>Logotipos, afiches e identidad visual.</p>
+        </article>
+        <article class="tarjeta">
+          <h3>Diseños 2D</h3>
+          <p>Ilustración digital y composición.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="aprendiendo">
+      <h2>Lo que quiero aprender</h2>
+      <ul>
+        <li>Diseño web con HTML, CSS y php</li>
+        <li>Base de datos</li>
+        <li>CiberSeguridad</li>
+      </ul>
+    </section>
+
+    <section id="portafolio">
+      <h2>Portafolio</h2>
+      <div class="tarjetas">
+        <article class="tarjeta">
+          <img src="img/Proyect3D.jpg" alt="Modelos 3D">
+          <h3>Modelos 3D</h3>
+          <p>Modelado, texturizado y render de piezas en 3D.</p>
+          <a href="#">Ver trabajo</a>
+        </article>
+        <article class="tarjeta">
+          <img src="img/ProyectLogo.jpg" alt="Logos 2D">
+          <h3>Logos 2D</h3>
+          <p>Diseño de logotipos e identidad visual.</p>
+          <a href="#">Ver trabajo</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <form id="formulario">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="correo">Correo</label>
+        <input type="email" id="correo" name="correo" required>
+
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="pie">
+    <p>© <span id="anio"></span> Darlyn Fernandez</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
