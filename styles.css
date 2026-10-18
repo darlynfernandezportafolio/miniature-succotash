@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -72,29 +73,41 @@ section h2 {
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 15px;
+  min-width: 0;
 }
 
 .tarjeta img {
   width: 100%;
+  height: auto;
+  display: block;
   border-radius: 8px;
 }
 
 .tarjeta a {
   color: #2c7be5;
+  overflow-wrap: anywhere;
 }
 
 form {
   display: grid;
   gap: 8px;
   max-width: 400px;
+  width: 100%;
 }
 
 input,
 textarea {
+  width: 100%;
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 5px;
   font-family: inherit;
+  font-size: 16px;
+}
+
+textarea {
+  resize: vertical;
+  max-width: 100%;
 }
 
 button {
@@ -104,6 +117,8 @@ button {
   padding: 10px;
   border-radius: 5px;
   cursor: pointer;
+  font-family: inherit;
+  font-size: 16px;
 }
 
 button:hover {
@@ -114,4 +129,88 @@ button:hover {
   text-align: center;
   padding: 20px;
   color: #777;
+}
+
+@media (max-width: 768px) {
+  .encabezado {
+    padding: 25px 15px;
+  }
+
+  .encabezado__titulo {
+    font-size: 24px;
+  }
+
+  .encabezado__subtitulo {
+    font-size: 15px;
+  }
+
+  .menu__lista {
+    gap: 12px;
+  }
+
+  main {
+    padding: 15px;
+  }
+
+  section {
+    padding: 20px;
+  }
+
+  .tarjetas {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  .encabezado {
+    padding: 20px 10px;
+  }
+
+  .encabezado__titulo {
+    font-size: 21px;
+  }
+
+  .encabezado__subtitulo {
+    font-size: 13px;
+  }
+
+  .menu__lista {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  main {
+    padding: 10px;
+  }
+
+  section {
+    padding: 15px;
+    margin-top: 15px;
+  }
+
+  section h2 {
+    font-size: 20px;
+  }
+
+  .tarjetas {
+    grid-template-columns: 1fr;
+  }
+
+  .tarjeta {
+    padding: 12px;
+  }
+
+  form {
+    max-width: 100%;
+  }
+
+  .pie {
+    padding: 15px 10px;
+    font-size: 13px;
+  }
 }
